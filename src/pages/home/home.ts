@@ -12,12 +12,28 @@ export class HomePage {
 
   }
 
-  ngOnInit() {
-    this.http.get('http://www.google.com').subscribe((t: any) => {
-      console.log('tt');
+  testGet() {
+
+    const url = 'http://192.168.0.50:3000/test-get';
+
+    const params = {
+      id: 1,
+      name: 'Ramon'
+    };
+
+    this.http.get(url, params).subscribe((t: any) => {
+      console.log('success');
     }, (err) => {
-      console.log(err);
-      console.log('x');
+    });
+  }
+
+  testPost() {
+    const url = 'http://192.168.0.50:3000/test-post';
+    /* const params = {
+
+    }; */
+    this.http.post(url).subscribe((t: any) => {
+    }, (err) => {
     });
   }
 
