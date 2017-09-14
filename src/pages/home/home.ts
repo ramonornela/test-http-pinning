@@ -38,4 +38,26 @@ export class HomePage {
     });
   }
 
+  testPut() {
+    const url = 'http://192.168.0.50:3000/test-put';
+    const params = {
+      name: 'Henrique'
+    };
+
+    this.http.put(url, {}, {body: params}).subscribe((t: any) => {
+      console.log('success');
+    }, (err) => {
+    });
+  }
+
+  testDelete() {
+    const url = 'http://192.168.0.50:3000/test-delete';
+    const params = {
+      id: 1
+    };
+    this.http.delete(url, params).subscribe((t: any) => {
+      console.log('success');
+    }, (err) => {
+    });
+  }
 }
