@@ -29,10 +29,11 @@ export class HomePage {
 
   testPost() {
     const url = 'http://192.168.0.50:3000/test-post';
-    /* const params = {
-
-    }; */
-    this.http.post(url).subscribe((t: any) => {
+    const params = {
+      name: 'Ramon'
+    };
+    this.http.post(url, {}, {body: params}).subscribe((t: any) => {
+      console.log('success');
     }, (err) => {
     });
   }
