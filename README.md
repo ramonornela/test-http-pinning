@@ -10,6 +10,9 @@ ionic-cli >= 3
 ```git clone https://github.com/ramonornela/test-http-pinning.git```
 ```npm install```
 
+#### Subir server (preferencialmente abrir outra aba do terminal para execução)
+```npm run server:start```
+
 ### Executando o projeto no browser
 ```npm run ionic:serve ou ionic serve```
 
