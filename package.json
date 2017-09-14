@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "2.1.4",
+    "body-parser": "^1.18.0",
     "express": "^4.15.0",
     "typescript": "2.3.4"
   },
